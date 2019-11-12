@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="food_control@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="LazyStudent">
+      <ObjectId>41168</ObjectId>
+      <StateNumber>798</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="NorthWind">
+      <ObjectId>24689</ObjectId>
+      <StateNumber>649</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="alpaeva">
+      <ObjectId>16611</ObjectId>
+      <StateNumber>601</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="bookShop">
+      <ObjectId>57843</ObjectId>
+      <StateNumber>1402</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="bookblog">
+      <ObjectId>90844</ObjectId>
+      <StateNumber>1768</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="7" parent="1" name="booknet">
+      <ObjectId>91019</ObjectId>
+      <StateNumber>1785</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="8" parent="1" name="booksystem">
+      <ObjectId>90747</ObjectId>
+      <StateNumber>1733</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="9" parent="1" name="food_control">
+      <ObjectId>91480</ObjectId>
+      <StateNumber>3437</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>3580</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|91481|91483|1
+sequence|table|91496|91498|1
+sequence|table|91516|91518|1
+</Relations>
+    </database>
+    <database id="10" parent="1" name="hb1tech">
+      <ObjectId>91441</ObjectId>
+      <StateNumber>3392</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="11" parent="1" name="hb1visas">
+      <ObjectId>91344</ObjectId>
+      <StateNumber>1914</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="12" parent="1" name="ipz">
+      <ObjectId>41399</ObjectId>
+      <StateNumber>1032</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="13" parent="1" name="lazystudent">
+      <ObjectId>41169</ObjectId>
+      <StateNumber>799</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="14" parent="1" name="northwind">
+      <ObjectId>16653</ObjectId>
+      <StateNumber>627</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="15" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>567</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="16" parent="1" name="test">
+      <ObjectId>49651</ObjectId>
+      <StateNumber>1400</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="17" parent="1" name="visa">
+      <ObjectId>91259</ObjectId>
+      <Comment>http://127.0.0.1:54801/browser/#</Comment>
+      <StateNumber>1819</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="18" parent="1" name="visa_data">
+      <ObjectId>91319</ObjectId>
+      <StateNumber>1885</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="19" parent="1" name="visasveden">
+      <ObjectId>91260</ObjectId>
+      <StateNumber>1825</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="20" parent="1" name="admin">
+      <ObjectId>41239</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="21" parent="1" name="head">
+      <ObjectId>41240</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="22" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="23" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="24" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="25" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="26" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="27" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="28" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="29" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="30" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="31" parent="1" name="worker">
+      <ObjectId>41241</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="32" parent="9" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <StateNumber>366</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="33" parent="9" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="34" parent="9" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="35" parent="9" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="36" parent="9" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>121</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="37" parent="9" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>360</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>3581</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="38" parent="9" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="39" parent="9" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="40" parent="9" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="41" parent="9" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="42" parent="9" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="43" parent="9" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="44" parent="9" name="plpgsql">
+      <ObjectId>12998</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>519</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="45" parent="37" name="meal_meal_id_seq">
+      <ObjectId>91516</ObjectId>
+      <StateNumber>3458</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="46" parent="37" name="users_norm_id_seq">
+      <ObjectId>91496</ObjectId>
+      <StateNumber>3446</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="47" parent="37" name="users_user_id_seq">
+      <ObjectId>91481</ObjectId>
+      <StateNumber>3440</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="48" parent="37" name="meal">
+      <ObjectId>91518</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3458</StateNumber>
+    </table>
+    <table id="49" parent="37" name="users">
+      <ObjectId>91483</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3446</StateNumber>
+    </table>
+    <table id="50" parent="37" name="users_norm">
+      <ObjectId>91498</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3446</StateNumber>
+    </table>
+    <column id="51" parent="48" name="meal_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3458</StateNumber>
+      <DefaultExpression>nextval(&apos;meal_meal_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="52" parent="48" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="53" parent="48" name="category">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="48" name="amound_kkal">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="55" parent="48" name="amound_proteins">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="56" parent="48" name="amound_carbones">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="48" name="amound_fats">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3458</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="58" parent="48" name="meal_meal_id_uindex">
+      <ObjectId>91522</ObjectId>
+      <StateNumber>3459</StateNumber>
+      <ColNames>meal_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="48" name="meal_pk">
+      <ObjectId>91523</ObjectId>
+      <StateNumber>3460</StateNumber>
+      <ColNames>meal_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="60" parent="48" name="meal_pk">
+      <ObjectId>91524</ObjectId>
+      <StateNumber>3460</StateNumber>
+      <ColNames>meal_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>meal_pk</UnderlyingIndexName>
+    </key>
+    <column id="61" parent="49" name="user_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3440</StateNumber>
+      <DefaultExpression>nextval(&apos;users_user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="62" parent="49" name="login">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>3440</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="63" parent="49" name="password">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>3440</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="64" parent="49" name="users_pk">
+      <ObjectId>91488</ObjectId>
+      <StateNumber>3442</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="65" parent="49" name="users_user_id_uindex">
+      <ObjectId>91487</ObjectId>
+      <StateNumber>3441</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="66" parent="49" name="users_login_uindex">
+      <ObjectId>91510</ObjectId>
+      <StateNumber>3451</StateNumber>
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="49" name="users_pk">
+      <ObjectId>91489</ObjectId>
+      <StateNumber>3442</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pk</UnderlyingIndexName>
+    </key>
+    <column id="68" parent="50" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3446</StateNumber>
+      <DefaultExpression>nextval(&apos;users_norm_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="69" parent="50" name="user_login">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>3446</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="50" name="amound_kkal">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3446</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="71" parent="50" name="amound_proteins">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3446</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="72" parent="50" name="amound_carbones">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3446</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="73" parent="50" name="amound_fats">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3446</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="74" parent="50" name="users_norm_id_uindex">
+      <ObjectId>91507</ObjectId>
+      <StateNumber>3447</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="75" parent="50" name="users_norm_pk">
+      <ObjectId>91508</ObjectId>
+      <StateNumber>3448</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="76" parent="50" name="users_norm_pk">
+      <ObjectId>91509</ObjectId>
+      <StateNumber>3448</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_norm_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="77" parent="50" name="users_norm_users_login_fk">
+      <ObjectId>91511</ObjectId>
+      <StateNumber>3455</StateNumber>
+      <ColNames>user_login</ColNames>
+      <RefTableId>91483</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefColNames>login</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+  </database-model>
+</dataSource>
