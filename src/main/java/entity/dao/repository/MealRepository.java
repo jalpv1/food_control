@@ -35,4 +35,7 @@ public class MealRepository {
         }
         return meals;
     }
+    public void getNorm(){
+
+    }
 }

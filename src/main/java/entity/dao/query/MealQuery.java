@@ -12,9 +12,11 @@ public class MealQuery {
 
 
     public static final String GET_MEAL_BY_NAME = "SELECT * FROM "+TABLE_NAME + " WHERE "+ NAME + "=?";
-    public static final String GET_MEAL = "select * from  "+TABLE_NAME
-            ;
+    public static final String GET_MEAL = "select * from  "+TABLE_NAME;
 
+    public static final String GET_MEAL_СOUNT ="SELECT " +AMOUND_CARBONES+","+AMOUND_FATS+","+
+            AMOUND_PROTEINS+","+AMOUND_KKAL+" FROM "+TABLE_NAME + " WHERE "+ NAME + "=?";;
 
+    public static final String PUT_USER_MEAL_BY_USERNAME ="INSERT INTO";
 
 }
