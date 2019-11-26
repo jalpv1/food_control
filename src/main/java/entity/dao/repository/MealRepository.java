@@ -38,4 +38,28 @@ public class MealRepository {
     public void getNorm(){
 
     }
+    public ArrayList<Meal> getMealByName(String name){
+        Connection connection = MyConnection.gettingConnection();
+        ArrayList<Meal> meals = new ArrayList<Meal>();
+        Meal meal ;
+        try {
+            String M = MealQuery.GET_MEAL_BY_NAME;
+            PreparedStatement statement =
+                    connection.prepareStatement(MealQuery.GET_MEAL_BY_NAME);
+
+            statement.setString(1,name);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()){
+                meal = new Meal(resultSet.getString(2),resultSet.getString(3)
+                        ,resultSet.getInt(4)  ,resultSet.getInt(5)  ,resultSet.getInt(6)
+                        ,resultSet.getInt(7));
+                meals.add(meal);
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        return meals;
+    }
 }

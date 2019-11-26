@@ -5,7 +5,7 @@ public class User {
     private String login;
     private String password;
 
-    public User(String login, String password,String sex,int weight,String activityLevel) {
+    public User(String login, String password,String sex,int weight,int activityLevel) {
         this.login = login;
         this.password = password;
         this.activityLevel = activityLevel;
@@ -13,7 +13,7 @@ public class User {
         this.weight = weight;
     }
 
-    private String activityLevel;
+    private int activityLevel;
     private String sex;
     private int weight;
 
@@ -22,6 +22,20 @@ public class User {
     private int fatsNorm;
     private int proteinsNorm;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", activityLevel=" + activityLevel +
+                ", sex='" + sex + '\'' +
+                ", weight=" + weight +
+                ", KkalNorm=" + KkalNorm +
+                ", carbonHydratesNorm=" + carbonHydratesNorm +
+                ", fatsNorm=" + fatsNorm +
+                ", proteinsNorm=" + proteinsNorm +
+                '}';
+    }
 
     public String getLogin() {
         return login;
@@ -39,11 +53,11 @@ public class User {
         this.password = password;
     }
 
-    public String getActivityLevel() {
+    public int getActivityLevel() {
         return activityLevel;
     }
 
-    public void setActivityLevel(String activityLevel) {
+    public void setActivityLevel(int activityLevel) {
         this.activityLevel = activityLevel;
     }
 
@@ -95,13 +109,5 @@ public class User {
         this.proteinsNorm = proteinsNorm;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                ", activityLevel='" + activityLevel + '\'' +
-                ", sex='" + sex + '\'' +
-                ", weight=" + weight ;
-    }
+
 }

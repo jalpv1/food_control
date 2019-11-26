@@ -28,9 +28,35 @@ public class UserRepository {
             while (resultSet.next()){
                 user  = new User(resultSet.getString(2),
                         resultSet.getString(3),resultSet.getString(4),
-                        resultSet.getInt(5),resultSet.getString(6)
+                        resultSet.getInt(5),resultSet.getInt(6)
 
                       );
+                users.add(user);
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        return users;
+    }
+    public ArrayList<User> getUserId(int id){
+        Connection connection =MyConnection.gettingConnection();
+        ArrayList<User> users = new ArrayList<User>();
+        User user ;
+        try {
+
+            PreparedStatement statement =
+                    connection.prepareStatement(UserQuery.GET_USER_BY_ID);
+
+             statement.setInt(1,id);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()){
+                user  = new User(resultSet.getString(2),
+                        resultSet.getString(3),resultSet.getString(4),
+                        resultSet.getInt(5),resultSet.getInt(6)
+
+                );
                 users.add(user);
             }
         }
