@@ -22,9 +22,11 @@ public class MyConnection {
 
     public static Connection gettingConnection() {
         try {
+            Class.forName("org.postgresql.Driver");
+
             Connection connection = getDataSource().getConnection();
             return connection;
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             return null;
         }

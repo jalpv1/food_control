@@ -1,6 +1,9 @@
 package entity;
 
-public class Meal {
+import java.io.Serializable;
+
+public class Meal implements Serializable {
+    int id;
     String name;
     String type;
     int amoundOfKkal;

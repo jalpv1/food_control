@@ -62,4 +62,51 @@ public class MealRepository {
         }
         return meals;
     }
+    public void addMeal(String name, String type, int amoundOfKkal,
+                        int amoundOfCarbonHydrates, int amoundOfProteins, int amoundOfFats){
+        Connection connection = MyConnection.gettingConnection();
+
+        try {
+            String M = MealQuery.GET_MEAL_BY_NAME;
+            PreparedStatement statement =
+                    connection.prepareStatement(MealQuery.PUT_USER_MEAL);
+
+            statement.setString(1,name);
+            statement.setString(2,type);
+            statement.setInt(3,amoundOfKkal);
+            statement.setInt(4,amoundOfProteins);
+            statement.setInt(5,amoundOfCarbonHydrates);
+            statement.setInt(6,amoundOfFats);
+
+            statement.executeUpdate();
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+    /*
+    public void addMealOwnList(Meal meal){
+        Connection connection = MyConnection.gettingConnection();
+
+        try {
+            PreparedStatement statement =
+                    connection.prepareStatement(MealQuery.PUT_USER_MEAL);
+
+            statement.setString(1,name);
+            statement.setString(2,type);
+            statement.setInt(3,amoundOfKkal);
+            statement.setInt(4,amoundOfProteins);
+            statement.setInt(5,amoundOfCarbonHydrates);
+            statement.setInt(6,amoundOfFats);
+
+            statement.executeUpdate();
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+     */
 }

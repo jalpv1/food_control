@@ -13,6 +13,23 @@ public class User {
         this.weight = weight;
     }
 
+    public User() {
+
+    }
+
+    public User(String login, String password, int activityLevel, String sex, int weight, int kkalNorm,
+                int carbonHydratesNorm, int fatsNorm, int proteinsNorm) {
+        this.login = login;
+        this.password = password;
+        this.activityLevel = activityLevel;
+        this.sex = sex;
+        this.weight = weight;
+        KkalNorm = kkalNorm;
+        this.carbonHydratesNorm = carbonHydratesNorm;
+        this.fatsNorm = fatsNorm;
+        this.proteinsNorm = proteinsNorm;
+    }
+
     private int activityLevel;
     private String sex;
     private int weight;
