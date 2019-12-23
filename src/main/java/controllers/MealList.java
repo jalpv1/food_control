@@ -19,10 +19,12 @@ public class MealList implements Command {
 
     @Override
     public String execute(HttpServletRequest request) {
-        String kkal = request.getParameter("kkal");
+        String kkalMeal = request.getParameter("kkal");
+        String amountOfMeal = request.getParameter("amount");
+        int amountOfkkal =  Integer.parseInt(kkalMeal)* Integer.parseInt(amountOfMeal)/100;
         LogIn.session.setAttribute("kkal",
                 (Integer) LogIn.session.getAttribute("kkal") -
-                        Integer.parseInt(kkal));
+                       amountOfkkal);
 
 
 /*

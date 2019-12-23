@@ -1,11 +1,9 @@
 package servlets;
 
-import controllers.Command;
-import controllers.LogIn;
-import controllers.MealList;
-import controllers.Registration;
+import controllers.*;
 import domain.MealService;
 import domain.UserService;
+import sun.tools.tree.AddExpression;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -30,7 +28,7 @@ public class MainServlet  extends HttpServlet {
         commands.put("/api/registration", new Registration(userService));
         commands.put("/api/login", new LogIn(userService,mealService));
         commands.put("/api/updatekkal", new MealList(mealService));
-
+        commands.put("/api/addmeal", new AddMeal(mealService));
 
     }
     @Override

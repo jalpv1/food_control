@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Base64;
 
 public class UserRepository {
     final static Connection connection = MyConnection.gettingConnection();
@@ -77,7 +78,7 @@ public class UserRepository {
                     connection.prepareStatement(UserQuery.ADD_USER);
 
             statement.setString(1, user.getLogin());
-            statement.setString(2, user.getPassword());
+            statement.setString(2, Base64.getEncoder().encodeToString( user.getPassword().getBytes()));
             statement.setString(3, user.getSex());
             statement.setInt(4, user.getWeight());
 

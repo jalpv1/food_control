@@ -7,6 +7,7 @@ import entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,7 +44,7 @@ public class LogIn implements Command {
 //                throw new RuntimeException("User with this email already exist");
             }
 
-            Optional<User> user = userService.logIn(login, password);
+            Optional<User> user = userService.logIn(login, Base64.getEncoder().encodeToString(password.getBytes()));
             if (user.isPresent()) {
                 request.setAttribute("login", user.get().getLogin());
                 session = request.getSession();
