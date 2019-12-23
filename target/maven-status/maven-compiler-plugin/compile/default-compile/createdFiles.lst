@@ -7,11 +7,14 @@ controllers\UserController.class
 controllers\AddMeal.class
 controllers\LogIn.class
 entity\Meal.class
+controllers\LogOut.class
 servlets\MainServlet.class
+filters\AccessFilter.class
 Main.class
 entity\algoritm\CountNormManager.class
 entity\algoritm\CountNormWoman.class
 domain\UserService.class
+filters\EncodeFiltr.class
 controllers\Registration.class
 entity\dao\utill\MyConnection.class
 entity\dao\query\UserQuery.class

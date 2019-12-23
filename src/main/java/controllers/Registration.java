@@ -25,6 +25,7 @@ public class Registration implements Command {
         String weight = request.getParameter("weight");
         String activityLevel = request.getParameter("activityLevel");
         String sex = request.getParameter("sex");
+        request.setAttribute("errors", false);
 
 /*
         if (name == null || name.equals("") || password == null || password.equals("") || email == null || email.equals("")) {
@@ -34,10 +35,12 @@ public class Registration implements Command {
  */
         try {
             if (!userService.checkEmail(login)) {
-                request.setAttribute("error", true);
-//                request.setAttribute("inwalidInput", "User with this email already exist");
+                request.setAttribute("errors", true);
+
+           request.setAttribute("invalidInput", "User with this email already exist");
                 //return "/registration.jsp";
 //                throw new RuntimeException("User with this email already exist");
+                return "/registration.jsp";
             }
 
             userService.addUser(new User(login,password, sex, Integer.parseInt(weight), Integer.parseInt(activityLevel)));

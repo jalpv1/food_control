@@ -34,7 +34,7 @@ private CountNormManager countNormManager ;
 
     }
     public boolean checkEmail(String email){
-        return userRepository.checkEmail(email) == 0;
+        return userRepository.checkEmail(email) == null;
     }
     public Optional<User> logIn(String email,String password){
         Optional<User> user = Optional.ofNullable((userRepository.findByEmailPassword(email,password)));

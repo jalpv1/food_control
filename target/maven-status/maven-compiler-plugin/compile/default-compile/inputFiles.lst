@@ -1,4 +1,5 @@
 E:\Documents\food\src\main\java\controllers\MealController.java
+E:\Documents\food\src\main\java\filters\EncodeFiltr.java
 E:\Documents\food\src\main\java\servlets\MainServlet.java
 E:\Documents\food\src\main\java\entity\dao\dao.java
 E:\Documents\food\src\main\java\entity\algoritm\CountNormMan.java
@@ -10,6 +11,7 @@ E:\Documents\food\src\main\java\entity\dao\repository\MealRepository.java
 E:\Documents\food\src\main\java\controllers\Registration.java
 E:\Documents\food\src\main\java\controllers\Controller.java
 E:\Documents\food\src\main\java\controllers\LogIn.java
+E:\Documents\food\src\main\java\filters\AccessFilter.java
 E:\Documents\food\src\main\java\entity\algoritm\CountNorm.java
 E:\Documents\food\src\main\java\entity\algoritm\CountNormManager.java
 E:\Documents\food\src\main\java\entity\algoritm\CountNormWoman.java
@@ -20,6 +22,7 @@ E:\Documents\food\src\main\java\controllers\UserController.java
 E:\Documents\food\src\main\java\entity\dao\utill\MyConnection.java
 E:\Documents\food\src\main\java\entity\Meal.java
 E:\Documents\food\src\main\java\entity\dao\query\UserQuery.java
+E:\Documents\food\src\main\java\controllers\LogOut.java
 E:\Documents\food\src\main\java\controllers\Command.java
 E:\Documents\food\src\main\java\controllers\AddMeal.java
 E:\Documents\food\src\main\java\controllers\Manager.java

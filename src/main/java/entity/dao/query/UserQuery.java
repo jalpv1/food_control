@@ -16,7 +16,7 @@ public class UserQuery {
 
     public static final String GET_BY_LOGIN_PASSWORD = "SELECT * FROM "+ TABLE_NAME + " WHERE "+ LOGIN +" =(?)" +
             " AND " + PASSWORD +" =(?)" ;
-    public static final String GET_COUNT_BY_LOGIN = "SELECT count(*) FROM "+ TABLE_NAME + " WHERE "+ LOGIN +" =(?)" ;
+    public static final String GET_BY_LOGIN = "SELECT * FROM "+ TABLE_NAME + " WHERE "+ LOGIN +" =(?)" ;
 
     public static final String GET_PASSWORD_BY_LOGIN = "SELECT * FROM "+ TABLE_NAME + " WHERE "+ LOGIN +" =(?)" + "AND"
             + PASSWORD + " =(?)";

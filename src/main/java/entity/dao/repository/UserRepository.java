@@ -147,19 +147,40 @@ public User matchUser(ResultSet resultSet){
     catch (Exception e){}
         return user;
 }
-    public int checkEmail(String login) {
+    public User checkEmail(String login) {
+        User user;
         try {
             PreparedStatement statement =
-                    connection.prepareStatement(UserQuery.GET_COUNT_BY_LOGIN);
+                    connection.prepareStatement(UserQuery.GET_BY_LOGIN);
             statement.setString(1, login);
-            ResultSet re = statement.executeQuery();
-            while (re.next()) {
-                return re.getInt(1);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                user = new User(resultSet.getString(2),
+
+                        resultSet.getString(3),
+                        resultSet.getInt(5),
+                        resultSet.getString(4),
+                        resultSet.getInt(5),
+                        resultSet.getInt(6),
+                        resultSet.getInt(7)
+                        , resultSet.getInt(8),
+                        resultSet.getInt(9)
+                );
+                user.setLogin(resultSet.getString(2));
+                user.setPassword(resultSet.getString(3));
+                user.setSex(resultSet.getString(4));
+                user.setWeight(resultSet.getInt(5));
+                user.setActivityLevel(resultSet.getInt(6));
+                user.setKkalNorm(resultSet.getInt(7));
+                user.setCarbonHydratesNorm(resultSet.getInt(8));
+                user.setProteinsNorm(resultSet.getInt(9));
+                user.setFatsNorm(resultSet.getInt(10));
+                return user;
             }
         } catch (SQLException e) {
         }
 
-        return 0;
+        return null;
     }
 
     public void addNorm(User user) {

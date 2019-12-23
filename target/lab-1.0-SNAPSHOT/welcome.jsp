@@ -26,11 +26,8 @@
     <title>Hello</title>
 </head>
 <body>
-DISABLED
-CopyCopy
 <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -38,27 +35,35 @@ CopyCopy
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/registration.jsp">Registration</a>
-                </li>
+
                 <%
                     if(session.getAttribute("user") != null){
                 %>
                 <li class="nav-item">
-                    <a class="nav-link"href="${pageContext.request.contextPath}/login.jsp">Log Out</a>
+                    <form method="post" action="api/logout" class="inline">
+                        <input type="hidden" name="kkal" placeholder="Enter amount" value="true">
+                        <button type="submit" name="Log Out" class="btn btn-info" >
+                            <i>Log Out</i>
+                        </button>
+
+                    </form>
                 </li>
                 <%
-                    }
+                    }else{
                 %>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Log In</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/registration.jsp">Registration</a>
+                </li>
+                <%
+                    }
+                %>
             </ul>
         </div>
     </div>
 </nav>
-<a href="${pageContext.request.contextPath}/registration.jsp">Registration</a>
-<a href="${pageContext.request.contextPath}/login.jsp">Log in</a>
 <%
     Optional<User> user = (Optional<User>) session.getAttribute("user");
     if (user == null) {
@@ -85,8 +90,8 @@ CopyCopy
          int limit =   Math.abs((Integer) session.getAttribute("kkal"));
     %>
     <div class="alert alert-danger" role="alert">
-        Your limit is off <%= limit%>
-    </div>
+    Your limit is off <%= limit%>
+</div>
     <%
 
         }

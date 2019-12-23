@@ -29,6 +29,9 @@ public class MainServlet  extends HttpServlet {
         commands.put("/api/login", new LogIn(userService,mealService));
         commands.put("/api/updatekkal", new MealList(mealService));
         commands.put("/api/addmeal", new AddMeal(mealService));
+        commands.put("/api/logout", new LogOut());
+
+
 
     }
     @Override

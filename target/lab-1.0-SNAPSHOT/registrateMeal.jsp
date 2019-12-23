@@ -20,11 +20,11 @@
         </tr>
         <tr>
             <td>Amound of calories</td>
-            <td><input type="text" name="kkal"/></td>
+            <td><input type="number" name="kkal"/></td>
         </tr>
         <tr>
             <td>Amound of fats</td>
-            <td><input type="text" name="fats"/></td>
+            <td><input type="number" name="fats"/></td>
         </tr>
         <tr>
             <td>Amound of proteins</td>
